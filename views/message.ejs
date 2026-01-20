@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="message-detail">
+            <h3><%= message.user %></h3>
+            <p id="date"><%= message.added %></p>
+            <p><%= message.text %></p>
+        </div>
+
+        <a href="/" class="back">Back to all messages</a>
+    </body>
+</html>

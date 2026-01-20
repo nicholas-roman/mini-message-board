@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+header, 
+form {
+    margin-top: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #b0c7cb;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+    min-width: 500px;
+}
+
+#message {
+    text-align: left;
+}
+
+#person {
+    color: #384959;
+    font-weight: bold;
+}
+
+.user-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#new {
+    color: #384959;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.box-link {
+    color: black;
+}
+
+.entries {
+    padding: 50px 20px;
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: #edf2f4;
+    box-shadow: 5px 5px 10px 2px rgb(161, 160, 160);
+    border-radius: 20px;
+}
+
+.submit {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 20%;
+    background-color: #88BDF2;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.5s ease-out;
+}
+
+.submit:hover {
+    background-color: #74ade5;
+}
+
+.back {
+    color: #6A89A7;
+}
+
+.message-box:hover {
+    box-shadow: 0 0 10px 1px #b2d0f0
+}
+
+.submit:hover, 
+.message-box:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.input-field {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.input-field label {
+    width: 120px;           
+    text-align: left; 
+}
+
+input, textarea {
+    flex: 1;
+    max-width: 300px;    
+}
+
+textarea {
+    padding-left: 3px;
+}
+
+input {
+    padding: 5px;
+}
+
+.message-detail {
+    margin: 100px auto;
+    max-width: 800px;
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px 1px #b7b7b7;
+    border-radius: 20px;
+}
+
+#date {
+    color: rgb(103, 101, 101);
+    margin: 10px 0 20px 0;
+}

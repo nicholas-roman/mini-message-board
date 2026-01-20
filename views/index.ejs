@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h2>All Messages</h2>
+            <a href="/new" id="new">New Message</a>
+        </header>
+        
+        <div class="messages">
+            <% messages.forEach((message, idx) => { %>
+                <a href="/message/<%= idx %>" class="box-link">
+                    <div class="message-box">
+                        <div class="user-name">
+                            <p id="person"><%= message.user %></p>
+                            <p><%= message.added.toLocaleString() %></p>
+                        </div>
+
+                        <p id="message">
+                            <% if (message.text.length > 21) { %>
+                                <%= message.text.substring(0, 21) + '...' %>
+                            <% } else { %>
+                                <%= message.text %>
+                            <% } %>
+                        </p>
+                    </div>
+                </a>
+            <% }); %>
+        </div>
+    </body>
+</html>
